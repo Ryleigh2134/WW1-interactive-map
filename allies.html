@@ -6,6 +6,10 @@
         <link rel="stylesheet" href="css/styles.css">
         <title>Alliances</title>
         <link rel="icon" type="image/x-icon" href="images/maps/base_map.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Brygada+1918:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap" rel="stylesheet">
     </head> 
     <nav>
 			<h1 class="maintitle">The Great War Interactive Map</h1>
@@ -15,7 +19,7 @@
     <section>
 		<div id="container" class="container">
 			<div id="image_container">
-                <img src="images/maps/factions.png" usemap="#image-map" id="world-map" class="world-map" data-main-src="images/maps/base_map.png" alt="World Map">
+                <img src="images/maps/factions.png" usemap="#image-map" id="main-map" class="world-map" data-main-src="images/maps/base_map.png" alt="World Map">
                 <a href="index.html" class="nations-button">Nations</a>
                 <a href="allies.html" class="allies-button">Alliances</a>
                 <map name="image-map">
@@ -73,22 +77,54 @@
 	</section>
     <dialog id="ally">
 		<form method="dialog">
-            <h1>Entente</h1>
-
+            <h1>The Entente</h1>
+            <img src="images/misc/allies.jpg" alt="The Entente" class="alliance">
+            <div class="legend">
+                <div class="legend-item">
+                    <span class="legend-square initial"></span>
+                    intial alliance members
+                </div>
+                <div class="legend-item">
+                    <span class="legend-square later"></span>
+                    later alliance members
+                </div>
+            </div>
+            <p>By the end of the first decade of the 20th century, the major European powers were divided between the Triple Entente and the Triple Alliance. The Triple Entente was made up of the United Kingdom, France, and Russia. The Triple Alliance was originally composed of Germany, Austria–Hungary, and Italy, but Italy remained neutral in 1914. As the war progressed, each coalition added new members. Japan joined the Entente in 1914 and, despite proclaiming its neutrality at the beginning of the war, Italy also joined the Entente in 1915. The term "Allies" became more widely used than "Entente"</p>
+            <a href="https://en.wikipedia.org/wiki/Allies_of_World_War_I" target="_blank">Learn more here</a>
         </form>
      </dialog><dialog id="neutral">
 		<form method="dialog">
             <h1>Neutral nations</h1>
+            <img src="images/misc/neutral.png" alt="Neutral nations" class="alliance">
+            <p>Neutrality in World War I was the formal status of nations not participating in the conflict, though this status varied significantly and was often compromised by economic and political factors. While countries like Switzerland, Norway, and Sweden maintained a non-combative stance, many others, including the United States, experienced a loss of true neutrality due to substantial trade and loans favoring one side, the influence of wartime propaganda, and, in some cases, direct invasion like that of Belgium. The rise of "total war" made strict neutrality nearly impossible for most nations.</p>
 
         </form>
      </dialog><dialog id="central">
 		<form method="dialog">
-            <h1>Central Powers</h1>
-
+            <h1>The Central Powers</h1>
+            <img src="images/misc/central.jpg" alt="The Central Powers" class="alliance">
+            <div class="legend legend-central">
+                <div class="legend-item">
+                    <span class="legend-square initial"></span>
+                    intial alliance members
+                </div>
+                <div class="legend-item">
+                    <span class="legend-square later"></span>
+                    later alliance members
+                </div>
+            </div>
+            <p>The Central Powers, also known as the Central Empires, were one of the two main coalitions that fought in World War I (1914-1918). It consisted of the German Empire, Austria-Hungary, the Ottoman Empire, and the Kingdom of Bulgaria; this was also known as the Quadruple Alliance. The Central Powers' origin was the alliance of Germany and Austria-Hungary in 1879. Despite having nominally joined the Triple Alliance before, Italy did not take part in World War I on the side of the Central Powers and later joined on the side of the Allies. The Ottoman Empire and Bulgaria did not join until after World War I had begun. The Central Powers faced, and were defeated by, the Allied Powers, which themselves had formed around the Triple Entente. They dissolved in 1918 after they lost the war.</p>
+            <a href="https://en.wikipedia.org/wiki/Central_Powers" target="_blank">Learn more here</a>
         </form>
      </dialog>
     <footer>
         <script src="js/script.js"></script>
         <div id="tooltip"></div>
+        <script src="js/imageMapResizer.min.js"></script>
+        <script>
+            window.onload = function () {
+                imageMapResize();
+            };
+        </script>
     </footer>
 </html>

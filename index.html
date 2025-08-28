@@ -1,21 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css/styles.css">
-        <title>Nations</title>
-        <link rel="icon" type="image/x-icon" href="images/maps/base_map.png">
-    </head> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Nations</title>
+    <link rel="icon" type="image/x-icon" href="images/maps/base_map.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Brygada+1918:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap" rel="stylesheet">
+</head>
+<body>
     <nav>
-			<h1 class="maintitle">The Great War Interactive Map</h1>
-            <a href="index.html" class="home-button">Maps</a>
-			<a href="more-info.html" class="about-button">More info</a>
+        <h1 class="maintitle">The Great War Interactive Map</h1>
+        <a href="index.html" class="home-button">Maps</a>
+        <a href="more-info.html" class="about-button">More info</a>
     </nav>
     <section>
-		<div id="container" class="container">
-			<div id="image_container">
-                <img src="images/maps/base_map.png" usemap="#image-map" id="world-map" class="world-map" data-main-src="images/maps/base_map" alt="World Map">
+        <div id="container" class="container">
+            <div id="image_container">
+                <img src="images/maps/base_map.png" usemap="#image-map" id="main-map" class="world-map" data-main-src="images/maps/base_map.png" alt="World Map">
                 <a href="index.html" class="nations-button">Nations</a>
                 <a href="allies.html" class="allies-button">Alliances</a>
                 <map name="image-map">
@@ -73,162 +78,287 @@
     </section>
     <dialog id="portugal">
 		<form method="dialog">
+            <img src="images/flags/portugal.png" alt="Flag of Portugal" class="flag">
             <h1>Kingdom of Portugal</h1>
-
+            <img src="images/leaders/portugal.png" alt="Manuel II of Portugal" class="leader">
+            <h2>Manuel II</h2>
+            <h3>Side - Entente</h3>
+            <p>Portugal was a member of the Entente Powers during World War I, contributing troops and resources to the war effort.</p>
+            <a href="https://en.wikipedia.org/wiki/Portugal_in_World_War_I" target="_blank">Learn more here</a>
         </form>
      </dialog>  
      <dialog id="spain">
 		<form method="dialog">
+            <img src="images/flags/spain.png" alt="Flag of Spain" class="flag">
             <h1>Kingdom of Spain</h1>
-
+            <img src="images/leaders/spain.jpg" alt="Alfonso XIII of Spain" class="leader">
+            <h2>Alfonso XIII</h2>
+            <h3>Side - Neutral</h3>
+            <p>Spain remained neutral during World War I, although it was economically affected by the conflict.</p>
+            <a href="https://en.wikipedia.org/wiki/Spain_in_World_War_I" target="_blank">Learn more here</a>
         </form>
      </dialog> 
      <dialog id="france">
 		<form method="dialog">
+            <img src="images/flags/france.png" alt="Flag of France" class="flag">
             <h1>French Third Republic</h1>
-
+            <img src="images/leaders/france.jpg" alt="Raymond Poincaré of France" class="leader">
+            <h2>Raymond Poincaré</h2>
+            <h3>Side - Entente</h3>
+            <p>France was a key member of the Entente Powers, fighting against the Central Powers throughout World War I.</p>
+            <a href="https://en.wikipedia.org/wiki/France_in_World_War_I" target="_blank">Learn more here</a>
         </form>
      </dialog> 
      <dialog id="italy">
 		<form method="dialog">
+            <img src="images/flags/italy.png" alt="Flag of Italy" class="flag">
             <h1>Kingdom of Italy</h1>
-
+            <img src="images/leaders/italy.jpg" alt="Vittorio Emanuele III of Italy" class="leader">
+            <h2>Vittorio Emanuele III</h2>
+            <h3>Side - Entente</h3>
+            <p>Italy joined the Entente Powers in 1915, switching sides from its initial neutrality to fight against the Central Powers.</p>
+            <a href="https://en.wikipedia.org/wiki/Italy_in_World_War_I" target="_blank">Learn more here</a>
         </form>
      </dialog> 
      <dialog id="swiss">
 		<form method="dialog">
+            <img src="images/flags/swiss.png" alt="Flag of Switzerland" class="flag">
             <h1>Swiss Confederation</h1>
-
+            <img src="images/leaders/swiss.jpg" alt="Federal Council of Switzerland" class="leader">
+            <h2>Federal Council</h2>
+            <h3>Side - Neutral</h3>
+            <p>Switzerland maintained its neutrality throughout World War I, avoiding involvement in the conflict.</p>
+            <a href="https://en.wikipedia.org/wiki/Switzerland_during_the_world_wars" target="_blank">Learn more here</a>
         </form>
      </dialog>
      <dialog id="luxembourg">
 		<form method="dialog">
+            <img src="images/flags/luxembourg.png" alt="Flag of Luxembourg" class="flag">
             <h1>Grand Duchy of Luxembourg</h1>
-
+            <img src="images/leaders/luxembourg.jpg" alt="Adolphe, Grand Duke of Luxembourg" class="leader">
+            <h2>Marie-Adélaïde</h2>
+            <h3>Side - Entente</h3>
+            <p>Luxembourg was occupied by Germany during World War I, but it remained a member of the Entente Powers.</p>
+            <a href="https://en.wikipedia.org/wiki/Luxembourg_in_World_War_I" target="_blank">Learn more here</a>
         </form>
      </dialog>
      <dialog id="belgium">
 		<form method="dialog">
+            <img src="images/flags/belgium.png" alt="Flag of Belgium" class="flag">
             <h1>Kingdom of Belgium</h1>
-
+            <img src="images/leaders/belgium.jpg" alt="Albert I of Belgium" class="leader">
+            <h2>Albert I</h2>
+            <h3>Side - Entente</h3>
+            <p>Belgium was invaded by Germany in 1914, leading to its entry into World War I on the side of the Entente Powers.</p>
+            <a href="https://en.wikipedia.org/wiki/Belgium_in_World_War_I" target="_blank">Learn more here</a>
         </form>
      </dialog>
      <dialog id="netherlands">
 		<form method="dialog">
+            <img src="images/flags/netherlands.png" alt="Flag of the Netherlands" class="flag">
             <h1>Kingdom of the Netherlands</h1>
-
+            <img src="images/leaders/netherlands.jpg" alt="Wilhelmina of the Netherlands" class="leader">
+            <h2>Wilhelmina</h2>
+            <h3>Side - Neutral</h3>
+            <p>The Netherlands remained neutral during World War I, although it faced economic challenges due to the conflict.</p>
+            <a href="https://en.wikipedia.org/wiki/Netherlands_in_World_War_I" target="_blank">Learn more here</a>
         </form>
      </dialog>
      <dialog id="germany">
 		<form method="dialog">
+            <img src="images/flags/germany.png" alt="Flag of Germany" class="flag">
             <h1>German Empire</h1>
-
+            <img src="images/leaders/germany.jpg" alt="Wilhelm II of Germany" class="leader">
+            <h2>Wilhelm II</h2>
+            <h3>Side - Central Powers</h3>
+            <p>Germany was one of the main Central Powers in World War I, leading the military efforts against the Entente Powers.</p>
+            <a href="https://en.wikipedia.org/wiki/Germany_in_World_War_I" target="_blank">Learn more here</a>
         </form>
      </dialog>
      <dialog id="denmark">
 		<form method="dialog">
+            <img src="images/flags/denmark.png" alt="Flag of Denmark" class="flag">
             <h1>Kingdom of Denmark</h1>
-
+            <img src="images/leaders/denmark.jpg" alt="Christian X of Denmark" class="leader">
+            <h2>Christian X</h2>
+            <h3>Side - Neutral</h3>
+            <p>Denmark remained neutral during World War I, maintaining its independence and avoiding direct involvement in the conflict.</p>
+            <a href="https://en.wikipedia.org/wiki/Denmark_in_World_War_I" target="_blank">Learn more here</a>
         </form>
      </dialog>
      <dialog id="norway">
 		<form method="dialog">
+            <img src="images/flags/norway.png" alt="Flag of Norway" class="flag">
             <h1>Kingdom of Norway</h1>
-
+            <img src="images/leaders/norway.jpg" alt="Haakon VII of Norway" class="leader">
+            <h2>Haakon VII</h2>
+            <h3>Side - Neutral</h3>
+            <p>Norway maintained its neutrality during World War I, although it was economically affected by the conflict.</p>
+            <a href="https://en.wikipedia.org/wiki/Norway_in_World_War_I" target="_blank">Learn more here</a>
         </form>
      </dialog>
      <dialog id="sweden">
 		<form method="dialog">
+            <img src="images/flags/sweden.png" alt="Flag of Sweden" class="flag">
             <h1>Kingdom of Sweden</h1>
-
+            <img src="images/leaders/sweden.jpg" alt="Gustaf V of Sweden" class="leader">
+            <h2>Gustaf V</h2>
+            <h3>Side - Neutral</h3>
+            <p>Sweden remained neutral during World War I, avoiding involvement in the conflict while maintaining its sovereignty.</p>
+            <a href="https://en.wikipedia.org/wiki/Sweden_in_World_War_I" target="_blank">Learn more here</a>
         </form>
      </dialog>
      <dialog id="austria">
 		<form method="dialog">
+            <img src="images/flags/austria.png" alt="Flag of Austria" class="flag">
             <h1>Austro-Hungarian Monarchy</h1>
-
+            <img src="images/leaders/austria.jpg" alt="Franz Joseph I of Austria" class="leader">
+            <h2>Franz Joseph I</h2>
+            <h3>Side - Central Powers</h3>
+            <p>Austria-Hungary was a key member of the Central Powers, fighting against the Entente Powers in World War I.</p>
+            <a href="https://en.wikipedia.org/wiki/Austria-Hungary_in_World_War_I" target="_blank">Learn more here</a>
         </form>
      </dialog>
      <dialog id="montenegro">
 		<form method="dialog">
+            <img src="images/flags/montenegro.png" alt="Flag of Montenegro" class="flag">
             <h1>Kingdom of Montenegro</h1>
-
+            <img src="images/leaders/montenegro.jpg" alt="Nicholas I of Montenegro" class="leader">
+            <h2>Nicholas I</h2>
+            <h3>Side - Entente</h3>
+            <p>Montenegro was allied with the Entente Powers during World War I, contributing troops to the war effort against the Central Powers.</p>
+            <a href="https://en.wikipedia.org/wiki/Montenegro_in_World_War_I" target="_blank">Learn more here</a>
         </form>
      </dialog>
      <dialog id="albania">
 		<form method="dialog">
+            <img src="images/flags/albania.png" alt="Flag of Albania" class="flag">
             <h1>Principality of Albania</h1>
-
+            <img src="images/leaders/albania.jpg" alt="Wilhelm of Albania" class="leader">
+            <h2>Wilhelm of Albania</h2>
+            <h3>Side - Neutral</h3>
+            <p>Albania declared its independence in 1912 and remained neutral during World War I, although it was affected by the conflict.</p>
+            <a href="https://en.wikipedia.org/wiki/Albania_in_World_War_I" target="_blank">Learn more here</a>
         </form>
      </dialog>
      <dialog id="serbia">
 		<form method="dialog">
+            <img src="images/flags/serbia.png" alt="Flag of Serbia" class="flag">
             <h1>Kingdom of Serbia</h1>
-
+            <img src="images/leaders/serbia.jpg" alt="Peter I of Serbia" class="leader">
+            <h2>Peter I</h2>
+            <h3>Side - Entente</h3>
+            <p>Serbia was one of the first countries to be attacked in World War I, leading to its entry into the conflict on the side of the Entente Powers.</p>
+            <a href="https://en.wikipedia.org/wiki/Serbia_in_World_War_I" target="_blank">Learn more here</a>
         </form>
      </dialog>
      <dialog id="romania">
 		<form method="dialog">
+            <img src="images/flags/romania.png" alt="Flag of Romania" class="flag">
             <h1>Kingdom of Romania</h1>
-
+            <img src="images/leaders/romania.jpg" alt="Ferdinand I of Romania" class="leader">
+            <h2>Ferdinand I</h2>
+            <h3>Side - Entente</h3>
+            <p>Romania joined the Entente Powers in 1916, contributing troops to the war effort against the Central Powers.</p>
+            <a href="https://en.wikipedia.org/wiki/Romania_in_World_War_I" target="_blank">Learn more here</a>
         </form>
      </dialog>
      <dialog id="bulgaria">
 		<form method="dialog">
+            <img src="images/flags/bulgaria.png" alt="Flag of Bulgaria" class="flag">
             <h1>Tsardom of  Bulgaria</h1>
-
+            <img src="images/leaders/bulgaria.jpg" alt="Ferdinand I of Bulgaria" class="leader">
+            <h2>Ferdinand I</h2>
+            <h3>Side - Central Powers</h3>
+            <p>Bulgaria joined the Central Powers in 1915, fighting against the Entente Powers in World War I.</p>
+            <a href="https://en.wikipedia.org/wiki/Bulgaria_in_World_War_I" target="_blank">Learn more here</a>
         </form>
      </dialog>
      <dialog id="greece">
 		<form method="dialog">
+            <img src="images/flags/greece.png" alt="Flag of Greece" class="flag">
             <h1>Kingdom of Greece</h1>
-
+            <img src="images/leaders/greece.jpg" alt="George I of Greece" class="leader">
+            <h2>George I</h2>
+            <h3>Side - Entente</h3>
+            <p>Greece was initially neutral but later joined the Entente Powers in 1917, contributing to the war effort against the Central Powers.</p>
+            <a href="https://en.wikipedia.org/wiki/Greece_in_World_War_I" target="_blank">Learn more here</a>
         </form>
      </dialog>
      <dialog id="uk">
 		<form method="dialog">
+            <img src="images/flags/uk.png" alt="Flag of the United Kingdom" class="flag">
             <h1>United Kingdom of Great Britain and Ireland</h1>
-
+            <img src="images/leaders/uk.jpg" alt="George V of the United Kingdom" class="leader">
+            <h2>George V</h2>
+            <h3>Side - Entente</h3>
+            <p>The United Kingdom was a leading member of the Entente Powers, playing a crucial role in World War I against the Central Powers.</p>
+            <a href="https://en.wikipedia.org/wiki/United_Kingdom_in_World_War_I" target="_blank">Learn more here</a>
         </form>
      </dialog>
      <dialog id="egypt">
 		<form method="dialog">
+            <img src="images/flags/egypt.png" alt="Flag of Egypt" class="flag">
             <h1>Khedivate of Egypt</h1>
-
+            <img src="images/leaders/egypt.png" alt="Abbas II of Egypt" class="leader">
+            <h2>Abbas II</h2>
+            <h3>Side - Entente</h3>
+            <p>Egypt was a British protectorate during World War I and contributed to the war effort on the side of the Entente Powers.</p>
+            <a href="https://en.wikipedia.org/wiki/Sinai_and_Palestine_campaign" target="_blank">Learn more here</a>
         </form>
      </dialog>
      <dialog id="ottoman">
 		<form method="dialog">
+            <img src="images/flags/ottoman.png" alt="Flag of the Ottoman Empire" class="flag">
             <h1>Sublime Ottoman State</h1>
-
+            <img src="images/leaders/ottoman.jpg" alt="Mehmed V of the Ottoman Empire" class="leader">
+            <h2>Mehmed V</h2>
+            <h3>Side - Central Powers</h3>
+            <p>The Ottoman Empire joined the Central Powers in 1914, fighting against the Entente Powers in World War I.</p>
+            <a href="https://en.wikipedia.org/wiki/Ottoman_Empire_in_World_War_I" target="_blank">Learn more here</a>
         </form>
      </dialog>
      <dialog id="arabia">
 		<form method="dialog">
+            <img src="images/flags/arabia.png" alt="Flag of Arabia" class="flag">
             <h1>Arab states</h1>
-
+            <img src="images/leaders/arabia.jpg" alt="Abdulaziz bin Abdul Rahman Al Saud" class="leader">
+            <h2>Hussein bin Ali</h2>
+            <h3>Side - Neutral</h3>
+            <p>The Arab tribes, under the leadership of Hussein bin Ali, played a significant role during World War I, particularly in the Arab Revolt against the Ottoman Empire.</p>
+            <a href="https://en.wikipedia.org/wiki/Arab_Revolt" target="_blank">Learn more here</a>
         </form>
      </dialog>
      <dialog id="iran">
 		<form method="dialog">
+            <img src="images/flags/iran.png" alt="Flag of Iran" class="flag">
             <h1>Guarded Domains of Iran</h1>
-
+            <img src="images/leaders/iran.jpg" alt="Ahmad Shah Qajar of Iran" class="leader">
+            <h2>Ahmad Shah Qajar</h2>
+            <h3>Side - Neutral</h3>
+            <p>Iran remained neutral during World War I, although it was affected by the conflict and faced internal challenges.</p>
+            <a href="https://en.wikipedia.org/wiki/Persian_campaign_(World_War_I)" target="_blank">Learn more here</a>
         </form>
      </dialog>
      <dialog id="russia">
 		<form method="dialog">
+            <img src="images/flags/russia.png" alt="Flag of Russia" class="flag">
             <h1>Russian Empire</h1>
-
+            <img src="images/leaders/russia.jpg" alt="Nicholas II of Russia" class="leader">
+            <h2>Nicholas II</h2>
+            <h3>Side - Entente</h3>
+            <p>Russia's rivalries with Germany and Austria-Hungary led to an alliance with France and involvement in Balkan affairs. The July Crisis opened a general conflict in which Russia was allied with France and the United Kingdom. Tsar Nicholas II believed he could re-establish his autocratic power and reunite his people through a victorious war. However, the army, ill-equipped and ill-prepared for a long battle, suffered a series of defeats in 1914 and 1915: the Empire suffered heavy human and territorial losses. Despite the restrictions on the international trade, Russia set up a war economy and won partial victories in 1916.</p>
+            <a href="https://en.wikipedia.org/wiki/Russia_in_World_War_I" target="_blank">Learn more here</a>
         </form>
      </dialog>
     <footer>
-    <script src="js/script.js"></script>
     <div id="tooltip"></div>
+    <script src="js/script.js"></script>
     <script src="js/imageMapResizer.min.js"></script>
     <script>
         window.onload = function () {
             imageMapResize();
         };
     </script>
-    </footer>
+</body>
 </html>
