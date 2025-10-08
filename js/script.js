@@ -131,3 +131,26 @@ document.addEventListener("DOMContentLoaded", () => { // makes sure my script wo
         });
     });
 });
+    document.querySelectorAll(".close-button").forEach(button => { // makes the close button work
+        button.addEventListener("click", (event) => {
+            const dialog = button.closest("dialog");
+            if (dialog) {
+                dialog.close();
+            }
+    });
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+    const burger = document.querySelector('.burger');
+    const navLinks = document.querySelector('.nav-links');
+
+    burger.addEventListener('click', () => {
+        navLinks.classList.toggle('show');
+    });
+
+    navLinks.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+            navLinks.classList.remove('show');
+        });
+    });
+});
