@@ -154,3 +154,49 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 });
+
+const img = document.querySelector('.world-map');
+  const container = document.querySelector('#image_container');
+
+  let offsetX = 0, offsetY = 0, isDragging = false;
+
+  function startDrag(x, y) {
+    isDragging = true;
+    offsetX = x - img.offsetLeft;
+    offsetY = y - img.offsetTop;
+  }
+
+  function drag(x, y) {
+    if (!isDragging) return;
+    let newX = x - offsetX;
+    let newY = y - offsetY;
+
+    // Keep image within container boundaries
+    newX = Math.min(0, Math.max(container.clientWidth - img.clientWidth, newX));
+    newY = Math.min(0, Math.max(container.clientHeight - img.clientHeight, newY));
+
+    img.style.left = newX + 'px';
+    img.style.top = newY + 'px';
+  }
+
+  function endDrag() {
+    isDragging = false;
+  }
+
+  // Mouse events
+  img.addEventListener('mousedown', e => startDrag(e.clientX, e.clientY));
+  document.addEventListener('mousemove', e => drag(e.clientX, e.clientY));
+  document.addEventListener('mouseup', endDrag);
+
+  // Touch events
+  img.addEventListener('touchstart', e => {
+    const touch = e.touches[0];
+    startDrag(touch.clientX, touch.clientY);
+  });
+
+  document.addEventListener('touchmove', e => {
+    const touch = e.touches[0];
+    drag(touch.clientX, touch.clientY);
+  }, { passive: false });
+
+  document.addEventListener('touchend', endDrag);
